@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Health Tracker</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Styling from previous example */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('nature.jpg'); 
+            background-size: 1360px 1250px; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            justify-content: center;
+            align-items: center;
+        }
+        #logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 70%;
+         }
+        h2 {
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+        .navbar {
+            margin-bottom: 20px;
+            background-color: rgba(10, 10, 10, 0.8); 
+        }
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        #nav-links {
+            position: absolute;
+            right: 5px;
+            top: 15px;
+         }
+        #nav-links a {
+            margin-right: 3px;
+            text-decoration: none;
+            font-size: 18px;
+            border-width: 1.5px;
+            border-color: #1976D2;
+            color: #1976D2;
+            border-style: solid;
+            padding: 10px 20px;
+            border-radius: 25px;
+            background-color: rgb(163, 44, 96);
+         }
+        #nav-links a:hover {
+            background: #1976D2;
+            color:white;
+         }
+        .container {
+            max-width: 500px;
+            background: peru;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            margin-top: 50px;
+        }
+        h1 {
+            color: #00c6ff;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            color: #ddd;
+        }
+        .form-control {
+            background: rgba(255, 255, 255, 0.8);
+            border: none;
+            color: #333;
+        }
+        .btn-primary {
+            background-color: #00c6ff;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #0072ff;
+        }
+        p {
+            color: #ddd;
+        }
+        a {
+            color: #00c6ff;
+        }
+        a:hover {
+            color: #0072ff;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="wellnesstracker.jpg" id="logo" alt="Wellness Tracker Logo">
+        <a class="navbar-brand" href="#">Health and Wellness Tracker</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div id="nav-links">
+                <a href="home.html">Home</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="log.html">Log Entries</a>
+                <a href="insights.html">Insights and Recommendations</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="text-center">Login</h1>
+        <form>
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email" required
+                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+                <small class="form-text text-muted">Please enter a valid email address.</small>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter your password" name="password" required
+                    minlength="6">
+                <small class="form-text text-muted">Password must be at least 6 characters long.</small>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Login</button>
+        </form>
+        <p class="text-center mt-3">Don't have an account? <a href="signup.html">Sign Up</a></p>
+    </div>
+
+    <!-- <script>
+        function showAlert() {
+            alert('Login Successful!');
+            return true; 
+        }
+    </script> -->
+</body>
+</html>

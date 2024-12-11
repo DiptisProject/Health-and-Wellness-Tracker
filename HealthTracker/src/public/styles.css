@@ -1,0 +1,139 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('nature.jpg'); 
+    background-size: 1400px 1500px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    justify-content: center;
+    align-items: center;
+}
+#logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 70%;
+ }
+
+h2 {
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.navbar {
+    margin-bottom: 20px;
+    background-color: rgba(10, 10, 10, 0.8); 
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#nav-links {
+    position: absolute;
+    right: 5px;
+    top: 20px;
+ }
+
+ #nav-links a {
+    margin-right: 3px;
+    text-decoration: none;
+    font-size: 18px;
+    border-width: 1.5px;
+    border-color: #1976D2;
+    color: #1976D2;
+    border-style: solid;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color:rgb(163, 44, 96);
+ }
+
+ #nav-links a:hover {
+    background: #1976D2;
+    color:white;
+ }
+/* Container Styles */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(119, 215, 134, 0.9);
+    border-radius: 8px;
+    margin: 5% auto 15% auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Button Styles */
+.btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-1px);
+}
+
+/* Responsive Styles */
+@media (max-width: 576px) {
+    .container {
+        padding: 15px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
+.healthimg{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    height: 313px;
+    width: 365px;
+  }
+.progressimg{
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  height: 313px;
+  width: 365px;
+}
+.wellnessjourney{
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 960px;
+}
+table, th, td {
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+th {
+    padding: 10px;
+}
